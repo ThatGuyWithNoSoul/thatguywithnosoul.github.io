@@ -1,1 +1,153 @@
-<h1>hello world!<h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NoSoul Records</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #00FF00;
+            font-family: 'Courier New', monospace;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px; /* Adjust this value to change the width of the centered box */
+            margin: 0 auto;
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: #444; /* Dark gray background color for the container */
+            position: relative;
+        }
+
+        .logo-container {
+            margin-bottom: 20px; /* Add some space below the logo container */
+            margin-top: 20px; /* Add some space above the logo container */
+        }
+
+        .logo {
+            max-width: 200px; /* Adjust the maximum width of the logo */
+            display: block;
+            margin: 0 auto; /* Center the logo horizontally */
+        }
+
+        .tabs-container {
+            background-color: #222; /* Background color for the tabs container */
+            border-radius: 0; /* Square corners for the tabs container */
+            padding: 0; /* Remove the padding */
+            max-width: 600px; /* Set a maximum width for the tabs container */
+            margin: 0 auto; /* Center the tabs container horizontally */
+            margin-top: 0; /* Remove the top margin */
+            margin-bottom: 0; /* Remove the bottom margin */
+        }
+
+        .tabs {
+            display: flex;
+            align-items: center; /* Align the tabs vertically */
+            overflow: hidden; /* Hide any overflowing tabs */
+            width: 100%; /* Set the tabs width to 100% */
+            gap: 0; /* Remove the gap between tabs */
+        }
+
+        .tab {
+            flex-grow: 1; /* Allow each tab to grow to fit the available space equally */
+            text-align: center;
+            cursor: pointer;
+            border-bottom: 3px solid transparent; /* Add a transparent bottom border */
+            background-color: #222; /* Background color for the tabs */
+            border-radius: 0; /* Square corners for the tabs */
+            width: calc(100% / 5); /* Set the width to be 1/5 of the container width (five tabs) */
+            padding: 10px 0; /* Adjust the padding to make the tabs taller */
+        }
+
+        .tab:hover {
+            border-bottom-color: #00FF00; /* Change the bottom border color on hover */
+            background-color: #333; /* Background color for the tabs on hover */
+        }
+
+        .content {
+            text-align: left;
+            margin-top: 30px; /* Add some space above the content */
+        }
+
+        .recent-releases {
+            text-align: left;
+            margin-top: -15px; /* Adjusted margin to move "Recent Releases" closer to the tabs */
+        }
+
+        .album-covers {
+            display: flex;
+            justify-content: space-between; /* Increase the space between the album covers */
+            margin-top: -10px; /* Add some space between the "Recent Releases" header and the album covers */
+        }
+
+        .album-cover {
+            max-width: 250px; /* Increase the width of the album covers */
+            margin: 10px; /* Add some space between the album covers */
+        }
+
+        .footer {
+            background-color: #000;
+            color: #00FF00;
+            padding: 10px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+
+        a {
+            color: #00FF00;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .pixelated-img {
+            image-rendering: pixelated;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo-container">
+        <img class="logo" src="/graphics/Logo_white.png" alt="Logo">
+    </div>
+
+    <div class="tabs-container">
+        <div class="tabs">
+            <div class="tab">About</div>
+            <div class="tab">Artists</div>
+            <div class="tab">Store</div>
+            <div class="tab">Blog</div>
+            <div class="tab">Contact</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="recent-releases">
+            <h3>Recent Releases</h3>
+            <div class="album-covers">
+                <img class="album-cover" src="/graphics/jade cover 3d.png" alt="Album 1">
+                <img class="album-cover" src="/graphics/APOTHEOSIS AlbumART final maybe.png" alt="Album 2">
+            </div>
+        </div>
+        <p>
+            Website under construction.
+        </p>
+        <p>
+            <a href="#">Click here</a> to experience epicness.
+        </p>
+        <div class="pixelated-img">
+            <img src="your_pixelated_image.jpg" alt="Pixelated Image">
+        </div>
+        <div class="footer">
+            &copy; 2023 NoSoul Records. All rights reserved.
+        </div>
+    </div>
+</body>
+</html>
