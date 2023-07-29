@@ -81,11 +81,12 @@
         .album-covers {
             display: flex;
             justify-content: space-between; /* Increase the space between the album covers */
-            margin-top: -10px; /* Add some space between the "Recent Releases" header and the album covers */
+            margin-top: 20px; /* Add some space between the "Recent Releases" header and the album covers */
         }
 
         .album-cover {
-            max-width: 250px; /* Increase the width of the album covers */
+            max-width: 100%; /* Images will resize to fit within the container */
+            width: 250px; /* Initial width of the album covers */
             margin: 10px; /* Add some space between the album covers */
         }
 
@@ -110,6 +111,17 @@
 
         .pixelated-img {
             image-rendering: pixelated;
+        }
+
+        /* Media queries for responsive design */
+        @media screen and (max-width: 600px) {
+            .album-covers {
+                flex-wrap: wrap;
+            }
+
+            .album-cover {
+                max-width: calc(50% - 20px); /* Resize to fit two album covers in a row */
+            }
         }
     </style>
 </head>
